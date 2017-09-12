@@ -51,7 +51,7 @@ dispatch_async(dispatch_get_main_queue(), block);\
         return;
     }
     
-    self.socket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ip地址:端口"]]];
+    self.socket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"请求的地址"]]];
     NSLog(@"请求的WebSocket地址：%@",self.socket.url.absoluteString);
 
     /*
